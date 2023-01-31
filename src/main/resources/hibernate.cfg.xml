@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:53337/t1035t61</property>
+        <property name="hibernate.connection.username">t1035t61</property>
+        <property name="hibernate.connection.password">ChopBeef=Rid</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hbm2ddl.auto">update </property>
+
+        <mapping class="csc1035.project2.rooms" /> <!--- Add a new mapping class for a new table in the database -->
+        <mapping class="csc1035.project2.User_Room" />
+        <mapping class="csc1035.project2.User" />
+        <mapping class="csc1035.project2.Modules"/>
+        <mapping class="csc1035.project2.Enrollment"/>
+        <mapping class="csc1035.project2.ModuleRequirements"/>
+
+
+    </session-factory>
+</hibernate-configuration>
